@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8" />
-	<title>GIT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Knitting Size Recommender</title>
 </head>
 <body>
-	<ul>
-		<li>GIT 이란?</li>
-		<li>버전</li>
-		<li>Branch</li>
-		<li>브랜치</li>
-		<li>충돌</li>
-		<li>충돌해결</li>
-		<li>원격저장소</li>
-		<li>push</li>
-		<li>pull</li>
-	</ul>
+  <div class="calculator">
+    <h1>도안 사이즈 추천기</h1><br><br>
+    <label for="patternGauge">도안의 게이지 (10cm 당 스티치 수):</label>
+    <input type="number" id="patternGauge" placeholder="도안 게이지"><br>
+    <label for="myGauge">내 게이지 (10cm 당 스티치 수):</label>
+    <input type="number" id="myGauge" placeholder="내 게이지"><br>
+    <label for="desiredSize">원하는 완성치수:</label>
+    <input type="number" id="desiredSize" placeholder="원하는 완성치수"><br>
+    <button id="calculateBtn">계산</button>
+    <p id="result"></p>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
